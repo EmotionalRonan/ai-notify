@@ -8,6 +8,6 @@ struct AiNotifyApp: App {
         MenuBarExtra("AiNotify", systemImage: "brain") {
             NotchPanelView()
         }
-        .menuBarExtraStyle(.menuBarPopover)
+        .menuBarExtraStyle(.window)
     }
 }

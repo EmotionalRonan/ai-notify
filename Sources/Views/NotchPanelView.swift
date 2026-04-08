@@ -34,7 +34,7 @@ struct NotchPanelView: View {
                 isExpanded: isExpanded,
                 onToggle: { withAnimation(.spring(response: Layout.animationResponse)) { isExpanded.toggle() } }
             )
-            .accessibilityLabel("Vibe Island 状态栏")
+            .accessibilityLabel("AiNotify 状态栏")
             .accessibilityHint(isExpanded ? "双击收起面板" : "双击展开面板")
             
             if isExpanded {
@@ -87,13 +87,13 @@ struct NotchPanelView: View {
                 permissions: processMonitor.pendingPermissions
             )
         }
-        .confirmationDialog("退出 Vibe Island", isPresented: $showingQuitConfirmation, titleVisibility: .visible) {
+        .confirmationDialog("退出 AiNotify", isPresented: $showingQuitConfirmation, titleVisibility: .visible) {
             Button("退出", role: .destructive) {
                 NSApplication.shared.terminate(nil)
             }
             Button("取消", role: .cancel) {}
         } message: {
-            Text("确定要退出 Vibe Island 吗？")
+            Text("确定要退出 AiNotify 吗？")
         }
     }
 }
@@ -137,7 +137,7 @@ struct StatusHeaderView: View {
         .padding(.horizontal, Layout.headerHorizontalPadding)
         .padding(.vertical, Layout.headerVerticalPadding)
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("Vibe Island 状态栏")
+        .accessibilityLabel("AiNotify 状态栏")
         .accessibilityValue(activeCount > 0 ? "\(activeCount) 个活跃会话" : "无活跃会话")
     }
 }
@@ -183,6 +183,8 @@ struct PermissionBarView: View {
 
 /// 底部操作栏
 struct BottomBarView: View {
+    let onQuit: () -> Void
+    
     var body: some View {
         HStack {
             Button(action: {}) {
@@ -193,13 +195,13 @@ struct BottomBarView: View {
             
             Spacer()
             
-            Text("Vibe Island v1.0")
+            Text("AiNotify v1.0")
                 .font(.system(size: 10))
                 .foregroundStyle(.secondary)
             
             Spacer()
             
-            Button(action: { NSApplication.shared.terminate(nil) }) {
+            Button(action: onQuit) {
                 Image(systemName: "power")
                     .font(.system(size: 12))
             }
