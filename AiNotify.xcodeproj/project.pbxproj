@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A13229F3E3D978D38C226FB /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1550280D7760549F39D0D1F5 /* TerminalController.swift */; };
+		2C6675256D9F6B1CDE1C84AC /* SessionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6186C5B81FF1F461B611ECFD /* SessionCardView.swift */; };
+		4493D0FB3839D21BFDF58935 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C4F48947B78FDEA73631 /* Extensions.swift */; };
+		4F832E42F5EF51CCBC369125 /* PermissionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B68399D8B3F7A031B7CCC47 /* PermissionRequest.swift */; };
+		98F2B0E60DD132D707FC21AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0F2A59A0E6A34D01A277B /* AppDelegate.swift */; };
+		AD5BA5D857B801D6E1BA960D /* ProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFBAE042B963429B46B4D2 /* ProcessMonitor.swift */; };
+		B738220A1BB2239E8D2F6B0B /* NotchPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F93D1E2724739642BBB11ED /* NotchPanelView.swift */; };
+		C723C23332BF494230F571E4 /* AISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC3DC91F5E69FC20458E0B /* AISession.swift */; };
+		C7D4ABFA0CF3B835284534A9 /* StatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F400549D36D3A9143C2801 /* StatusIndicator.swift */; };
+		C93FF93A9E0812E9AF4AF699 /* AiNotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9740E987348E8B705B267D9 /* AiNotifyApp.swift */; };
+		E879F266A4DAEFAD008533AF /* PermissionRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8E2471A580E94B8FB8F30B /* PermissionRequestView.swift */; };
+		E87ACB427C72F020A03B2526 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7330392F9BB3528427EDB976 /* NotificationService.swift */; };
+		EC33EB67217254DEEF46F66A /* SessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22185C4C98B5CAA857F4EF /* SessionStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12C0F2A59A0E6A34D01A277B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1550280D7760549F39D0D1F5 /* TerminalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
+		4F93D1E2724739642BBB11ED /* NotchPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPanelView.swift; sourceTree = "<group>"; };
+		6186C5B81FF1F461B611ECFD /* SessionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCardView.swift; sourceTree = "<group>"; };
+		66BC3DC91F5E69FC20458E0B /* AISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISession.swift; sourceTree = "<group>"; };
+		7330392F9BB3528427EDB976 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8B68399D8B3F7A031B7CCC47 /* PermissionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequest.swift; sourceTree = "<group>"; };
+		9CFFBAE042B963429B46B4D2 /* ProcessMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessMonitor.swift; sourceTree = "<group>"; };
+		A1F400549D36D3A9143C2801 /* StatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicator.swift; sourceTree = "<group>"; };
+		A9740E987348E8B705B267D9 /* AiNotifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiNotifyApp.swift; sourceTree = "<group>"; };
+		AD8E2471A580E94B8FB8F30B /* PermissionRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequestView.swift; sourceTree = "<group>"; };
+		B815C8600BB68D9BA2CFB717 /* AiNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF22185C4C98B5CAA857F4EF /* SessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatus.swift; sourceTree = "<group>"; };
+		F2B3C4F48947B78FDEA73631 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2CE0FF99051113245D50A647 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7330392F9BB3528427EDB976 /* NotificationService.swift */,
+				9CFFBAE042B963429B46B4D2 /* ProcessMonitor.swift */,
+				1550280D7760549F39D0D1F5 /* TerminalController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30B722D95C305B6B35580976 = {
+			isa = PBXGroup;
+			children = (
+				74E6771A43FBF10A743F2794 /* Sources */,
+				373BD6A0008DAE0908CA16A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		373BD6A0008DAE0908CA16A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B815C8600BB68D9BA2CFB717 /* AiNotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64F07BE5F5B3B4AD94F29622 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9740E987348E8B705B267D9 /* AiNotifyApp.swift */,
+				12C0F2A59A0E6A34D01A277B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74E6771A43FBF10A743F2794 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				64F07BE5F5B3B4AD94F29622 /* App */,
+				D408B70749A0452FB9528C72 /* Models */,
+				2CE0FF99051113245D50A647 /* Services */,
+				A1784A0E9ED7C962A54189BC /* Utilities */,
+				FD9680E9F46468F24414EAF6 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A1784A0E9ED7C962A54189BC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F2B3C4F48947B78FDEA73631 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D408B70749A0452FB9528C72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66BC3DC91F5E69FC20458E0B /* AISession.swift */,
+				8B68399D8B3F7A031B7CCC47 /* PermissionRequest.swift */,
+				EF22185C4C98B5CAA857F4EF /* SessionStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD9680E9F46468F24414EAF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F93D1E2724739642BBB11ED /* NotchPanelView.swift */,
+				AD8E2471A580E94B8FB8F30B /* PermissionRequestView.swift */,
+				6186C5B81FF1F461B611ECFD /* SessionCardView.swift */,
+				A1F400549D36D3A9143C2801 /* StatusIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A823328BC7B83C68036562BC /* AiNotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7203D1B6C41BFC57941B76 /* Build configuration list for PBXNativeTarget "AiNotify" */;
+			buildPhases = (
+				E5A5441B4CC88E113F2FB7AA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AiNotify;
+			packageProductDependencies = (
+			);
+			productName = AiNotify;
+			productReference = B815C8600BB68D9BA2CFB717 /* AiNotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC9FAC65691673D10ED7760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A823328BC7B83C68036562BC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 57DD15F72DB3E5DB7E5E00A7 /* Build configuration list for PBXProject "AiNotify" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 30B722D95C305B6B35580976;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 373BD6A0008DAE0908CA16A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A823328BC7B83C68036562BC /* AiNotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5A5441B4CC88E113F2FB7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C723C23332BF494230F571E4 /* AISession.swift in Sources */,
+				C93FF93A9E0812E9AF4AF699 /* AiNotifyApp.swift in Sources */,
+				98F2B0E60DD132D707FC21AC /* AppDelegate.swift in Sources */,
+				4493D0FB3839D21BFDF58935 /* Extensions.swift in Sources */,
+				B738220A1BB2239E8D2F6B0B /* NotchPanelView.swift in Sources */,
+				E87ACB427C72F020A03B2526 /* NotificationService.swift in Sources */,
+				4F832E42F5EF51CCBC369125 /* PermissionRequest.swift in Sources */,
+				E879F266A4DAEFAD008533AF /* PermissionRequestView.swift in Sources */,
+				AD5BA5D857B801D6E1BA960D /* ProcessMonitor.swift in Sources */,
+				2C6675256D9F6B1CDE1C84AC /* SessionCardView.swift in Sources */,
+				EC33EB67217254DEEF46F66A /* SessionStatus.swift in Sources */,
+				C7D4ABFA0CF3B835284534A9 /* StatusIndicator.swift in Sources */,
+				2A13229F3E3D978D38C226FB /* TerminalController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		37376DA3DD3000D8AFA10809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = AiNotify;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		444DE1A39D2FDD43F52311D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/AiNotify.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ainotify.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7C25009856DE1A82CA6F295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = AiNotify;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		F1DD49A5526F4AAC976568F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/AiNotify.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ainotify.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57DD15F72DB3E5DB7E5E00A7 /* Build configuration list for PBXProject "AiNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C25009856DE1A82CA6F295 /* Debug */,
+				37376DA3DD3000D8AFA10809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE7203D1B6C41BFC57941B76 /* Build configuration list for PBXNativeTarget "AiNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1DD49A5526F4AAC976568F3 /* Debug */,
+				444DE1A39D2FDD43F52311D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC9FAC65691673D10ED7760 /* Project object */;
+}
