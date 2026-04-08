@@ -1,0 +1,51 @@
+name: Build AiNotify
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest-stable
+        
+    - name: Install XcodeGen
+      run: |
+        brew install xcodegen
+        
+    - name: Generate Xcode Project
+      run: |
+        xcodegen generate
+        
+    - name: Build App
+      run: |
+        xcodebuild -project AiNotify.xcodeproj \
+          -scheme AiNotify \
+          -configuration Release \
+          -destination 'platform=macOS' \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          build
+          
+    - name: Archive Build
+      run: |
+        mkdir -p build/Release
+        cp -r build/Release/AiNotify.app build/Release/ 2>/dev/null || true
+        
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: AiNotify-macOS
+        path: |
+          build/Release/*.app
+        retention-days: 7
